@@ -1,0 +1,15 @@
+seed: 42
+
+data:
+  source_dir: 振动信号源数据
+  output_dir: 实验0_公共预处理与评价框架
+  channel: X-2
+  sampling_frequency: 10000
+  spindle_speed_rpm: 5000
+  window_length: 2048
+  step_size: 1024
+  remove_window_mean: true
+
+experiment0:
+  max_example_windows: 6
+  pca_random_state: 42
