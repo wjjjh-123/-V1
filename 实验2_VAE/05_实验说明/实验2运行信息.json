@@ -1,0 +1,24 @@
+{
+  "实验名称": "实验2：VAE",
+  "输入真实窗口": "D:\\desktop\\信号数据扩充V1\\实验0_公共预处理与评价框架\\01_预处理数据\\X-2_窗口数据_原始.npy",
+  "输入标准化窗口": "D:\\desktop\\信号数据扩充V1\\实验0_公共预处理与评价框架\\01_预处理数据\\X-2_窗口数据_标准化.npy",
+  "输出目录": "D:\\desktop\\信号数据扩充V1\\实验2_VAE",
+  "真实窗口数量": 1746,
+  "生成窗口数量": 1746,
+  "窗口长度": 2048,
+  "设备": "cuda",
+  "随机种子": 42,
+  "VAE参数": {
+    "latent_dim": 32,
+    "beta": 0.0005,
+    "epochs": 120,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "val_ratio": 0.15,
+    "generated_count": null,
+    "residual_latent_noise": 0.8,
+    "residual_scale": 1.0,
+    "clamp_percentile_low": 0.2,
+    "clamp_percentile_high": 99.8
+  }
+}

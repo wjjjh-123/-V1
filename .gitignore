@@ -1,1 +1,21 @@
 .idea/
+__pycache__/
+*.pyc
+振动信号源数据/
+research-writing-skill-main/
+
+# 文献和外部资料
+*.pdf
+
+# 深度学习模型权重和大体积数组
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+
+# 大体积窗口数据导出文件
+*窗口数据.csv
+
+# 临时缓存
+.pytest_cache/
