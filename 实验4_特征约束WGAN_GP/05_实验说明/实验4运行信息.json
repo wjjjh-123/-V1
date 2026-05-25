@@ -1,0 +1,39 @@
+{
+  "实验名称": "实验4：特征约束 WGAN-GP",
+  "输入真实窗口": "D:\\desktop\\信号数据扩充V1\\实验0_公共预处理与评价框架\\01_预处理数据\\X-2_窗口数据_原始.npy",
+  "输入标准化窗口": "D:\\desktop\\信号数据扩充V1\\实验0_公共预处理与评价框架\\01_预处理数据\\X-2_窗口数据_标准化.npy",
+  "输出目录": "D:\\desktop\\信号数据扩充V1\\实验4_特征约束WGAN_GP",
+  "真实窗口数量": 1746,
+  "生成窗口数量": 1746,
+  "窗口长度": 2048,
+  "设备": "cuda",
+  "随机种子": 42,
+  "条件特征名称": [
+    "均方根_RMS",
+    "峰值_Peak",
+    "峰峰值_PeakToPeak",
+    "偏度_Skewness",
+    "峭度_Kurtosis",
+    "峰值因子_CrestFactor",
+    "频率重心_Hz",
+    "0到1kHz能量占比",
+    "1到3kHz能量占比",
+    "3到5kHz能量占比",
+    "一倍频能量占比",
+    "二倍频能量占比",
+    "三四倍频能量占比"
+  ],
+  "特征约束WGAN-GP参数": {
+    "latent_dim": 128,
+    "epochs": 30,
+    "batch_size": 64,
+    "generator_learning_rate": 0.0001,
+    "discriminator_learning_rate": 0.0001,
+    "critic_steps": 3,
+    "gradient_penalty_weight": 10.0,
+    "feature_loss_weight": 8.0,
+    "generated_count": null,
+    "clamp_percentile_low": 0.2,
+    "clamp_percentile_high": 99.8
+  }
+}

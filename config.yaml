@@ -13,3 +13,41 @@ data:
 experiment0:
   max_example_windows: 6
   pca_random_state: 42
+
+experiment2:
+  latent_dim: 32
+  beta: 0.0005
+  epochs: 120
+  batch_size: 64
+  learning_rate: 0.001
+  val_ratio: 0.15
+  generated_count:
+  residual_latent_noise: 0.80
+  residual_scale: 1.00
+  clamp_percentile_low: 0.2
+  clamp_percentile_high: 99.8
+
+experiment3:
+  latent_dim: 128
+  epochs: 120
+  batch_size: 64
+  generator_learning_rate: 0.0001
+  discriminator_learning_rate: 0.0001
+  critic_steps: 3
+  gradient_penalty_weight: 10.0
+  generated_count:
+  clamp_percentile_low: 0.2
+  clamp_percentile_high: 99.8
+
+experiment4:
+  latent_dim: 128
+  epochs: 120
+  batch_size: 64
+  generator_learning_rate: 0.0001
+  discriminator_learning_rate: 0.0001
+  critic_steps: 3
+  gradient_penalty_weight: 10.0
+  feature_loss_weight: 8.0
+  generated_count:
+  clamp_percentile_low: 0.2
+  clamp_percentile_high: 99.8

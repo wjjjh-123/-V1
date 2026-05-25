@@ -1,0 +1,19 @@
+{
+  "??": {
+    "latent_dim": 128,
+    "epochs": 120,
+    "batch_size": 64,
+    "generator_learning_rate": 0.0001,
+    "discriminator_learning_rate": 0.0001,
+    "critic_steps": 3,
+    "gradient_penalty_weight": 10.0,
+    "feature_loss_weight": 8.0,
+    "residual_scale": 0.7,
+    "residual_l2_weight": 0.005,
+    "generated_count": null,
+    "clamp_percentile_low": 0.2,
+    "clamp_percentile_high": 99.8
+  },
+  "????": "D:\\desktop\\信号数据扩充V1\\实验5_残差特征约束WGAN_GP_优化版_无截断",
+  "???": "???"
+}
